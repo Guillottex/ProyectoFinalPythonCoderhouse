@@ -1,0 +1,30 @@
+{% extends 'publicaciones/base.html' %}
+{% load static %}
+
+{% block contenido %}
+    <div class="contenedor-mi">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="imagen-mi-contenedor">
+                    <img src="{% static 'usuarios/img/FotoGuillermo.jpg' %}" alt="Foto de perfil predeterminada" class="rounded-circle imagen-mi">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/guillermo-repetto/" class="text-light me-3 icono-enlace">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/Guillottex" class="text-light icono-enlace">
+                            <i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="texto-mi">
+                    <h2 class="titulo-mi">Acerca de mí</h2>
+                    <p>
+                        Guillermo Repetto, un entusiasta de la programación que explora el mundo del código con curiosidad y determinación. También es un apasionado de la cocina, fusionando sabores con creatividad. Su espíritu aventurero lo lleva a explorar nuevos destinos y culturas, enriqueciendo su perspectiva. En él convergen la tecnología, la gastronomía y la pasión por descubrir el mundo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}
